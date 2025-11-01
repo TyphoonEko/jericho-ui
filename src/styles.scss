@@ -2,5 +2,12 @@
 
 html, body { 
     height: 100%; 
-    background-color: #F5F5DC;}
+    background-color: #C0CCD6;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+mat-toolbar.mat-toolbar-single-row {
+  padding: 0 !important;
+}
+html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
