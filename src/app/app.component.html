@@ -30,12 +30,30 @@
     </div>
 
     <div class="second">
-  <ngx-slick-carousel class="carousel" [config]="slideConfig">
-    <div ngxSlickItem *ngFor="let img of images" class="slide">
-      <img [src]="img" alt="Gallery Image">
-    </div>
-  </ngx-slick-carousel>
-</div>
+      <div class="second__item">
+        <ngx-slick-carousel [config]="slideConfig">
+          <div ngxSlickItem *ngFor="let img of images" class="slide">
+            <img [src]="img" alt="Gallery Image">
+          </div>
+        </ngx-slick-carousel>
+      </div>
+    
+
+    <div class="second__item" >
+        <mat-card class="fb-card" (click)="openLink('https://www.facebook.com/profile.php?id=61557282549419')">
+          <mat-card-header>
+            <mat-card-title>Our Latest Facebook Update</mat-card-title>
+          </mat-card-header>
+<!-- 
+          <img mat-card-image src="assets/fb-logo.png" alt="Facebook Post"> -->
+
+          <mat-card-content>
+            <p>Click to view our latest post on Facebook!</p>
+          </mat-card-content>
+        </mat-card>
+            </div>
+            </div>
+
   </div>
 
 </mat-drawer-container>
