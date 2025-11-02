@@ -34,7 +34,7 @@ export class AppComponent {
     dots: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: true
+    autoplaySpeed: 2000,
+    arrows: false
   };
 }
