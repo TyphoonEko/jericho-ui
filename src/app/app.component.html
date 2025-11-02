@@ -1,13 +1,41 @@
 <mat-drawer-container class="drawer-container" hasBackdrop="true"> 
   <mat-drawer class="drawer" mode="side" #drawer>
-    <button mat-button class="drawer__item">Services</button>
-    <button mat-button class="drawer__item">Contact Us</button>
-    <button mat-button class="drawer__item">Details</button>
+    <div class="drawer__item">
+      <mat-icon class="icon">call</mat-icon>
+      <button mat-button>Services</button>
+    </div>
+
+    <div class="drawer__item">
+      <mat-icon class="icon">info</mat-icon>
+      <button mat-button>About Us</button>
+    </div>
+
+    <div class="drawer__item">
+      <mat-icon class="icon">info</mat-icon>
+      <button mat-button>Contact Us</button>
+    </div>
   </mat-drawer>
 
   <app-top-nav [drawer]="drawer"></app-top-nav>
 
   <div class="main-content">
-    <p>Main content</p>
+    <div class="first">
+       <div class="first__item">
+      </div>
+      <div class="first__item">
+        <img src="./assets/1.png" alt="Sample Image">
+      </div>
+       <div class="first__item">
+      </div>
     </div>
+
+    <div class="second">
+  <ngx-slick-carousel class="carousel" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let img of images" class="slide">
+      <img [src]="img" alt="Gallery Image">
+    </div>
+  </ngx-slick-carousel>
+</div>
+  </div>
+
 </mat-drawer-container>
